@@ -48,7 +48,7 @@ def main():
     with open('./pools.txt', 'r') as input:
         lines = input.readlines()
     for line in lines:
-        getPool(line)
+        getPool(line.strip())
 
 if __name__ == "__main__":
     main()
