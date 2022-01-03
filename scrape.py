@@ -45,7 +45,10 @@ def getPool(URL):
         json.dump(pool, output)
 
 def main():
-    getPool('https://oma.hwc.hr/pools/906bcbf4-6675-3d23-b888-eff53539a19b')
+    with open('./pools.txt', 'r') as input:
+        lines = input.readlines()
+    for line in lines:
+        getPool(line)
 
 if __name__ == "__main__":
     main()
