@@ -1,0 +1,2 @@
+# poolscrape
+mappool stealer/formatter
